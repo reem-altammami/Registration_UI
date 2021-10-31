@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Registration</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="re_password">Re_password</string>
+    <string name="register">Register</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="yyyy_mm_dd">yyyy/mm/dd</string>
+    <string name="welcomeMasseg">WELCOME..</string>
+    <string name="passAlert">Two passwords not match</string>
+    <string name="emailAlert">please write correct email</string>
+    <string name="nameAlert">please write you name</string>
+    <string name="passwordAlert">please write password</string>
+</resources>
