@@ -8,7 +8,7 @@
     <string name="register">Register</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
-    <string name="yyyy_mm_dd">yyyy/mm/dd</string>
+    <string name="yyyy_mm_dd">Date of birth</string>
     <string name="welcomeMasseg">WELCOME..</string>
     <string name="passAlert">Two passwords not match</string>
     <string name="emailAlert">please write correct email</string>
