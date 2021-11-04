@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable/dateicon.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable/emailicon.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable/homeicon.xml" value="0.24512820512820513" />
+        <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable/passicon.xml" value="0.24512820512820513" />
         <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/drawable/personicon.xml" value="0.24512820512820513" />
-        <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/layout/activity_main.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/reems/AndroidStudioProjects/Registration/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24512820512820513" />
       </map>
     </option>
   </component>

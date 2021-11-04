@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         // when click button validation function invoke. This function validation for every required field
         binding.buttonRegistration.setOnClickListener { validation() }
      hideKeyboard()
-
     }
 
     // when user press Enter this function call handleKeyEvent to hide keyboard
@@ -30,56 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding.rePassword.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
         binding.birthDate.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
     }
-    // this function for checking Name (it will calling by function "validation")
 
-    fun validName() {
-        if (binding.name.text.toString().isEmpty()) {
-            binding.showName.setText(getString(R.string.nameAlert))
-        } else {
-            binding.name.text.toString()
-        }
-    }
-
-// this function for checking Email (it will calling by function "validation")
-
-    fun validEmail() {
-        if (!(binding.email.text.toString().contains('@')) && !(binding.email.text.toString()
-                .contains('.'))
-        ) {
-            binding.showName.setText(getString(R.string.emailAlert))
-        } else {
-            binding.email.text.toString()
-        }
-    }
-
-// this function for checking password (it will calling by function "validation")
-
-    fun validPassword() {
-        if (binding.password.text.toString().isEmpty()) {
-            binding.showName.text = getString(R.string.passwordAlert)
-        } else if (binding.password.text.toString() != binding.rePassword.text.toString()) {
-            binding.showName.text = getString(R.string.passAlert)
-        } else {
-            binding.password.text.toString()
-            binding.rePassword.text.toString()
-        }
-    }
-
-    // This function validation for every required field , then print Name with welcome massage
-
-    fun validation() {
-        validPassword()
-        validEmail()
-        validName()
-
-        if (binding.name.text.toString().isNotEmpty() &&
-            binding.email.text.toString().isNotEmpty() &&
-            binding.rePassword.text.toString().isNotEmpty())
-            {
-            binding.welcom.text = getString(R.string.welcomeMasseg)
-            binding.showName.setText(binding.name.text.toString())
-        }
-    }
     private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
             // Hide the keyboard
@@ -90,5 +40,24 @@ class MainActivity : AppCompatActivity() {
         }
         return false
     }
+    fun validation(){
+        if (binding.password.text.toString().isNotEmpty()&&binding.rePassword.text.toString().isNotEmpty()){
+           if (binding.password.text.toString()==binding.rePassword.text.toString()){
+            if(binding.email.text.toString().contains('@') && binding.email.text.toString().contains('.')){
+                if (binding.name.text.toString().isNotEmpty()){
+                    binding.welcom.text=getText(R.string.welcomeMasseg)
+                    binding.showName.setText(binding.name.text.toString())
+                } else{
+                    binding.showName.text=getText(R.string.nameAlert)
+                }
+            } else {
+                binding.showName.text = getText(R.string.emailAlert)
+            }
+        } else {
+            binding.showName.text= getText(R.string.passAlert)
+        }
+    }else{
+binding.showName.text = getText(R.string.passwordAlert)
+        }    }
 }
 
